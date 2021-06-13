@@ -36,7 +36,7 @@ else
 fi;
 unset _zdotdir_set
 
-for f in $HOME/.config/zsh/config/modules/**/main.zsh(.N);
+for f in $HOME/.config/zsh/config/modules/***/main.zsh(.N);
 do
     source $f
 done

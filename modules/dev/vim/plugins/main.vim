@@ -5,10 +5,6 @@ Plug 'Shougo/neoinclude.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'w0rp/ale'
 Plug 'airblade/vim-gitgutter'
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
 
 " Language specific
 Plug 'roxma/ncm-clang'

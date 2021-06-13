@@ -13,9 +13,8 @@ ln -sfn "$SOURCE/vim/plugins" "$NVIM_BASE/plugins/$INSTALL_AS"
 ln -sfn "$SOURCE/vim/config" "$NVIM_BASE/config/$INSTALL_AS"
 
 
-ZSH_BASE=~/.config/zsh/
+ZSH_BASE=~/.config/zsh/config
 mkdir -p $ZSH_BASE/modules
 
 # Install zsh config
 ln -sfn "$SOURCE/zsh" "$ZSH_BASE/modules/$INSTALL_AS"
-
