@@ -1,6 +1,6 @@
 #!/bin/sh
 
-SOURCE=$(realpath $1)
+SOURCE=$(realpath "$1")
 INSTALL_AS=$2
 
 NVIM_BASE=~/.config/nvim/

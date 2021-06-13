@@ -1,10 +1,12 @@
+Plug 'neovim/nvim-lspconfig'
 Plug 'Shougo/deoplete.nvim'
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'Shougo/neoinclude.vim'
 Plug 'tpope/vim-fugitive'
-Plug 'w0rp/ale'
 Plug 'airblade/vim-gitgutter'
+Plug 'deoplete-plugins/deoplete-lsp'
+Plug 'dense-analysis/ale'
 
 " Language specific
 Plug 'roxma/ncm-clang'

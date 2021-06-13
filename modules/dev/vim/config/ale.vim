@@ -3,6 +3,7 @@ let g:ale_linters = {
   \ 'python': ['flake8'],
   \ 'haskell': ['ghc-mod', 'hlint'],
   \ 'ansible': ['ansible_lint'],
+  \ 'sh': ['shellcheck'],
   \ 'cpp': ['gcc', 'clangtidy'],
   \ }
 
