@@ -12,6 +12,7 @@ endif
 
 lua << EOF
 require('plugins')
+require('config')
 EOF
 
 call plug#begin()
