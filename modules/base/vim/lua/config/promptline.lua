@@ -1,4 +1,3 @@
-lua << EOF
 vim.g['promptline_symbols'] = {
     left = '',
     right = '',
@@ -10,4 +9,3 @@ vim.g['promptline_symbols'] = {
     battery = '',
     space = ' '
 }
-EOF

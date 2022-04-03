@@ -1,5 +1,5 @@
 -- Line numbers
-vim.api.nvim_set_option('number', true)
+vim.opt.number = true
 
 -- Undo
 vim.api.nvim_set_option('undodir', vim.env.HOME .. '/.config/nvim/undodir/')
