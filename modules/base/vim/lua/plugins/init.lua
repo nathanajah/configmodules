@@ -1,0 +1,13 @@
+local packer = require('packer')
+local use = packer.use
+use('scrooloose/nerdtree')
+use('tpope/vim-commentary')
+use('tpope/vim-surround')
+use('embear/vim-localvimrc')
+use('vim-ctrlspace/vim-ctrlspace')
+use('easymotion/vim-easymotion')
+use('moll/vim-bbye')
+use('itchyny/lightline.vim')
+use('edkolev/promptline.vim')
+use('ntpeters/vim-better-whitespace')
+use('nvim-telescope/telescope.nvim')
