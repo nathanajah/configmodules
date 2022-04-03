@@ -1,5 +1,5 @@
-set background=dark
-colorscheme solarized
-let g:lightline = {
-            \ 'colorscheme': 'solarized'
-            \ }
+lua << EOF
+vim.api.nvim_set_option('background', 'dark')
+vim.cmd('colorscheme solarized')
+vim.g['lightline'] = {colorscheme = 'solarized'}
+EOF

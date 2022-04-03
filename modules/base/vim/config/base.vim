@@ -1,26 +1,24 @@
-" Syntax highlighting
-syntax on
+lua << EOF
 
-" Line numbers
-set number
+-- Line numbers
+vim.api.nvim_set_option('number', true)
 
-" Undo
-set undodir=$HOME/.config/nvim/undodir/
-set undofile
-set undolevels=1000
-set undoreload=10000
+-- Undo
+vim.api.nvim_set_option('undodir', vim.env.HOME .. '/.config/nvim/undodir/')
+vim.api.nvim_set_option('undolevels', 1000)
+vim.api.nvim_set_option('undoreload', 10000)
+vim.api.nvim_set_option('undofile', true)
 
-" Indentation
-set expandtab
-set tabstop=4
-set shiftwidth=4
+-- Indentation
+vim.api.nvim_set_option('expandtab', true)
+vim.api.nvim_set_option('tabstop', 4)
+vim.api.nvim_set_option('shiftwidth', 4)
+vim.api.nvim_set_option('smartindent', true)
 
-" Hidden
-set hidden
+-- Hidden
+vim.api.nvim_set_option('hidden', true)
 
-set smartindent
-set expandtab shiftwidth=4 tabstop=4
+vim.g['python3_host_prog']= vim.env.HOME .. '/.config/venv/py3/nvim/bin/python'
+vim.g['python_host_prog']= vim.env.HOME .. '/.config/venv/py2/nvim/bin/python'
 
-" Python
-let g:python3_host_prog=$HOME . '/.config/venv/py3/nvim/bin/python'
-let g:python_host_prog=$HOME . '/.config/venv/py2/nvim/bin/python'
+EOF
