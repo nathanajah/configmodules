@@ -38,11 +38,10 @@ unset _zdotdir_set
 
 for f in $HOME/.config/zsh/config/modules/***/main.zsh(.N);
 do
+    ZSH_MOD_FOLDER=$(dirname $f)
     source $f
 done
 
-# Promptline
-source ~/.config/zsh/prompt.sh
 # Editor
 export EDITOR='nvim'
 export VISUAL='nvim'
