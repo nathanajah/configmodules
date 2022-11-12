@@ -2,7 +2,6 @@
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
-
 mkdir -p ~/.config/nvim/lua/plugins
 mkdir -p ~/.config/nvim/lua/config
 ln -nsf "$SCRIPT_DIR/../configbase/zsh/.zshrc" ~/.zshrc
