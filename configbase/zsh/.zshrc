@@ -26,7 +26,7 @@ antigen bundle Tarrasch/zsh-bd
 antigen bundle supercrabtree/k
 antigen bundle jocelynmallon/zshmarks
 
-antigen apply 
+antigen apply
 
 if (( _zdotdir_set )); then
     ZDOTDIR=$_old_zdotdir
