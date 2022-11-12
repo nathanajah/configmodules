@@ -1,0 +1,2 @@
+require('nvim-tree').setup()
+vim.api.nvim_set_keymap('n', '<F7>', ':NvimTreeToggle<CR>', {})
