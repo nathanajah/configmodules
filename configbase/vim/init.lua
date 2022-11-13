@@ -1,5 +1,3 @@
-lua << EOF
-
 local fn = vim.fn
 local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
 if fn.empty(fn.glob(install_path)) > 0 then
@@ -8,4 +6,9 @@ end
 
 require('plugins')
 require('config')
-EOF
+
+lsp = require('util/lsp')
+
+require('lspconfig')['clangd'].setup{
+  on_attach = lsp.on_attach,
+}
