@@ -6,9 +6,3 @@ end
 
 require('plugins')
 require('config')
-
-lsp = require('util/lsp')
-
-require('lspconfig')['clangd'].setup{
-  on_attach = lsp.on_attach,
-}

@@ -25,12 +25,12 @@ local on_attach = function(client, bufnr)
   buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 
   -- Set some keybinds conditional on server capabilities
-  if client.resolved_capabilities.document_range_formatting then
+  if client.server_capabilities.document_range_formatting then
     buf_set_keymap("v", "<space>f", "<cmd>lua vim.lsp.buf.range_formatting()<CR>", opts)
   end
 
   -- Set autocommands conditional on server_capabilities
-  if client.resolved_capabilities.document_highlight then
+  if client.server_capabilities.document_highlight then
     vim.api.nvim_exec([[
       hi LspReferenceRead cterm=bold ctermbg=red guibg=LightYellow
       hi LspReferenceText cterm=bold ctermbg=red guibg=LightYellow
@@ -43,4 +43,19 @@ local on_attach = function(client, bufnr)
     ]], false)
   end
 end
-return {on_attach = on_attach}
+
+require('lspconfig')['clangd'].setup{
+  on_attach = on_attach,
+}
+
+require'lspconfig'.bashls.setup{
+  on_attach = on_attach,
+}
+
+require'lspconfig'.dockerls.setup{
+  on_attach=on_attach,
+}
+
+require'lspconfig'.tsserver.setup{
+  on_attach=on_attach,
+}
