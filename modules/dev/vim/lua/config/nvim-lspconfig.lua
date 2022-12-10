@@ -59,3 +59,7 @@ require'lspconfig'.dockerls.setup{
 require'lspconfig'.tsserver.setup{
   on_attach=on_attach,
 }
+
+require'lspconfig'.gopls.setup{
+  on_attach=on_attach,
+}
