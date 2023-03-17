@@ -63,3 +63,7 @@ require'lspconfig'.tsserver.setup{
 require'lspconfig'.gopls.setup{
   on_attach=on_attach,
 }
+
+require'lspconfig'.golangci_lint_ls.setup{
+  on_attach=on_attach,
+}

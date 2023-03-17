@@ -95,8 +95,9 @@ then
 fi
 
 # go bin
-if [ -d "$HOME/go/bin" ]
+if [ -d "$HOME/go" ]
 then
+  GOPATH="$HOME/go"
   PATH="$HOME/go/bin:$PATH"
 fi
 
@@ -120,3 +121,10 @@ cdf() {
 }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+if [ -d "$HOME/.nvm" ]
+then
+  NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+fi
