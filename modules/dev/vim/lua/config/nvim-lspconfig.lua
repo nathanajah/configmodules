@@ -71,3 +71,9 @@ require'lspconfig'.rust_analyzer.setup{
 require'lspconfig'.golangci_lint_ls.setup{
   on_attach=on_attach,
 }
+vim.api.nvim_create_autocmd("BufWritePre", {
+    buffer = buffer,
+    callback = function()
+        vim.lsp.buf.format { async = false }
+    end
+})
