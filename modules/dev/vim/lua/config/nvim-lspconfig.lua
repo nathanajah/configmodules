@@ -67,3 +67,7 @@ require'lspconfig'.gopls.setup{
 require'lspconfig'.rust_analyzer.setup{
   on_attach=on_attach,
 }
+
+require'lspconfig'.golangci_lint_ls.setup{
+  on_attach=on_attach,
+}

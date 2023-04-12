@@ -8,6 +8,7 @@ use('ludovicchabant/vim-lawrencium')
 use('airblade/vim-gitgutter')
 use('folke/trouble.nvim')
 use('hashivim/vim-terraform')
+use('nvim-tree/nvim-web-devicons')
 
 -- Don't install COQ if on Windows due to virtualenv not being setup yet
 if not sysname:find 'Windows' then
