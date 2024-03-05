@@ -9,5 +9,6 @@ return {
   'nvim-lualine/lualine.nvim',
   'ntpeters/vim-better-whitespace',
   'nvim-telescope/telescope.nvim',
-  'nvim-tree/nvim-tree.lua'
+  'nvim-tree/nvim-tree.lua',
+  {"nvim-treesitter/nvim-treesitter", build= ":TSUpdate"}
 }

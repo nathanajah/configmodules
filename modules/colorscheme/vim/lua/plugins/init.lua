@@ -1,15 +1,13 @@
-local packer = require('packer')
-local use = packer.use
-
--- use('altercation/vim-colors-solarized')
--- use('JulioJu/neovim-qt-colors-solarized-truecolor-only')
--- local lazy = require('lazy')
--- lazy.setup({
---   'altercation/vim-colors-solarized',
---   'JulioJu/neovim-qt-colors-solarized-truecolor-only',
--- })
 
 return {
-  'altercation/vim-colors-solarized',
-  'JulioJu/neovim-qt-colors-solarized-truecolor-only'
+  {
+    'maxmx03/solarized.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.o.background = 'dark' -- or 'light'
+
+      vim.cmd.colorscheme 'solarized'
+    end,
+  }
 }
