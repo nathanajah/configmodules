@@ -9,6 +9,12 @@ return {
   'hashivim/vim-terraform',
   'nvim-tree/nvim-web-devicons',
   'sindrets/diffview.nvim',
+  'stevearc/aerial.nvim',
   'ms-jpq/coq_nvim',
   'ms-jpq/coq.artifacts',
+  'mfussenegger/nvim-dap',
+  'rcarriga/nvim-dap-ui',
+  'folke/neodev.nvim',
+  'leoluz/nvim-dap-go',
+  'nvim-neotest/nvim-nio',
 }
