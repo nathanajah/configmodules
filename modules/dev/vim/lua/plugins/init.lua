@@ -12,9 +12,11 @@ return {
   'stevearc/aerial.nvim',
   'ms-jpq/coq_nvim',
   'ms-jpq/coq.artifacts',
+  'ms-jpq/coq.thirdparty',
   'mfussenegger/nvim-dap',
   'rcarriga/nvim-dap-ui',
   'folke/neodev.nvim',
   'leoluz/nvim-dap-go',
   'nvim-neotest/nvim-nio',
+  'github/copilot.vim',
 }
