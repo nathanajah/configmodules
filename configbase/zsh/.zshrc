@@ -114,3 +114,7 @@ then
   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 fi
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then                                                                                                                                     2404-work 
+  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+fi
