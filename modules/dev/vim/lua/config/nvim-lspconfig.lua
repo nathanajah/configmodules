@@ -69,6 +69,14 @@ require'lspconfig'.golangci_lint_ls.setup{
 }
 
 vim.api.nvim_create_autocmd("BufWritePre", {
+    pattern = {
+      "*.go",
+      "*.c",
+      "*.cpp",
+      "*.h",
+      "*.hpp",
+      "*.rs"
+    },
     buffer = buffer,
     callback = function()
         vim.lsp.buf.format { async = false }
