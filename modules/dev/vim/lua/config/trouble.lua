@@ -1,1 +1,10 @@
 require("trouble").setup {}
+vim.keymap.set("n", "<F8>", "<cmd>Trouble symbols toggle auto_preview=false<CR>")
+vim.keymap.set("n", "<leader>xx", "<cmd>Trouble diagnostics toggle auto_preview=false<CR>")
+vim.keymap.set("n", "<leader>xl", "<cmd>Trouble lsp toggle auto_preview=false<CR>")
+vim.keymap.set("n", "<leader>xd", "<cmd>Trouble lsp_definitions toggle auto_preview=false<CR>")
+vim.keymap.set("n", "<leader>xD", "<cmd>Trouble lsp_declarations toggle auto_preview=false<CR>")
+vim.keymap.set("n", "<leader>xi", "<cmd>Trouble lsp_implementations toggle auto_preview=false<CR>")
+vim.keymap.set("n", "<leader>xr", "<cmd>Trouble lsp_references toggle auto_preview=false<CR>")
+vim.keymap.set("n", "<leader>xI", "<cmd>Trouble lsp_incoming_calls toggle auto_preview=false<CR>")
+vim.keymap.set("n", "<leader>xO", "<cmd>Trouble lsp_outgoing_calls toggle auto_preview=false<CR>")

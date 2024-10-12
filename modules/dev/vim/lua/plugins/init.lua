@@ -9,7 +9,6 @@ return {
   'hashivim/vim-terraform',
   'nvim-tree/nvim-web-devicons',
   'sindrets/diffview.nvim',
-  'stevearc/aerial.nvim',
   'ms-jpq/coq_nvim',
   'ms-jpq/coq.artifacts',
   'ms-jpq/coq.thirdparty',
@@ -19,4 +18,6 @@ return {
   'leoluz/nvim-dap-go',
   'nvim-neotest/nvim-nio',
   'github/copilot.vim',
+  'nvim-neotest/neotest',
+  'fredrikaverpil/neotest-golang',
 }
