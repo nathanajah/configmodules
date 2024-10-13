@@ -115,6 +115,7 @@ then
 fi
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
-if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then                                                                                                                                     2404-work 
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
   . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
 fi
+
