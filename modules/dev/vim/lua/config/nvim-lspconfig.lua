@@ -58,6 +58,11 @@ require'lspconfig'.dockerls.setup{
 
 require'lspconfig'.gopls.setup{
   on_attach=on_attach,
+  settings = {
+    gopls = {
+      symbolScope = "workspace",
+    }
+  }
 }
 
 require'lspconfig'.rust_analyzer.setup{

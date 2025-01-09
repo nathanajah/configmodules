@@ -119,3 +119,5 @@ if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
   . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
 fi
 
+export TERMINFO=/usr/share/terminfo
+export TERM=tmux-256color
