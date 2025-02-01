@@ -20,4 +20,6 @@ return {
   'github/copilot.vim',
   'nvim-neotest/neotest',
   'fredrikaverpil/neotest-golang',
+  'olimorris/codecompanion.nvim',
+  'echasnovski/mini.diff',
 }
